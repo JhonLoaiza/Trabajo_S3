@@ -45,7 +45,8 @@ public class Vehiculo_Distribuidora { // Declaración de la clase principal llam
 
         int costoDespacho = 0;
 
-        if (totalCompra >= 50000 && distancia <= 20) {
+        // Flujo Condicional para calcular el precio del despacho
+        if (totalCompra >= 50000 && distancia <= 20) { 
             costoDespacho = 0; // Despacho gratis
         } else if (totalCompra >= 25000 && totalCompra <= 49999) {
             costoDespacho = distancia * 150;
